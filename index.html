@@ -1,21 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="font-size: 16px;" lang="en"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="FIT3179 Data Visualisation 2, Get Tested!, COVID-19 Impact, Spread Across Australia">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  <script src="vega_lite_vis.js"></script>
+  <title>FIT3179 Data Visualisation 2</title>
+  <link rel="stylesheet" href="nicepage.css">
+  <link rel="stylesheet" href="Home.css" media="screen">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  </script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-    <script src="vega_lite_vis.js"></script>
-    <title>First vega-lite graph </title>
-</head>
-
-<body>
-    <h1>Map Distribution in USA and North Mexico in Last 10 years</h1>
-    <div id="bar_chart">
-    </div>
-</body>
-
-</html>
+  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-header"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://lms.monash.edu" class="u-image u-logo u-image-1">
+          <img src="images/logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+      </div></header>
+    <section class="u-align-center u-clearfix u-section-1">
+      <div class="u-clearfix u-image u-shading u-sheet u-image-1" data-image-width="2357" data-image-height="1326">
+        <h1 class="u-text u-title u-text-1">COVID-19 Impact</h1>
+        <p class="u-large-text u-text u-text-variant u-text-2">Khanh Nguyen 32497806</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1" src="">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-text u-text-1">Find your nearest PCR!</h2>
+                  <p class="u-text u-text-2">While Rapid Antigen Tests (RATs) are a quick and easy method of testing for COVID-19, the PCR test still remains the most accurate method of testing known by today’s standards. If you are feeling any symptoms, please get tested at a verified PCR testing site. To find your nearest PCR testing site, please visit https://www.coronavirus.vic.gov.au/ and get tested today!</p>
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60" id="Graph1">
+                <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-c08f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60" id="Graph2">
+                <div class="u-container-layout u-container-layout-1" src=""></div>
+              </div>
+              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-align-center u-text u-text-default u-text-1">Impact of COVID-19</h2>
+                  <p class="u-text u-text-2">The impact of COVID-19 has led to dramatic losses in all parts of the world including economic, social, and environmental detriments. It was also become a challenge to maintain stability in all countries. Socially, millions of people have fallen into extreme poverty due to the pandemic while half of the world’s enterprises face risk of financial hardships. As a result, we must consider our actions in a world of uncertainty.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-06e2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1" src="">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <h2 class="u-align-center u-text u-text-1">Spread of the Disease</h2>
+                  <p class="u-align-center u-text u-text-2">Transmission of coronavirus can be through the air that within short range. The particles can be spread in poorly ventilated indoor areas where people are within distance of each other for long periods of time. Through this, the virus is able to infect the person through their eyes, nose or mouth. It is then recommended to avoid crowded places, close-contact settings and confined and enclosed spaces to reduce the spread of COVID-19.</p>
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60" id="Graph3">
+                <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-c08f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60" id="Graph4">
+                <div class="u-container-layout u-container-layout-1" src=""></div>
+              </div>
+              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-align-center u-text u-text-default u-text-1">Fatality</h2>
+                  <p class="u-text u-text-2">COVID-19 has caused over 6.5 million fatalities across the world. However, it can be seen above that mortalities have gradually decreased over time to produce a more stable world. Since 31 January 2022, there have been a further approximate 2500 deaths in Australia due to COVID-19. Of those that have died, males had a higher number of registered deaths, those of high age regardless of sex with a median age of 83.7.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-06e2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1" src="">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <h2 class="u-align-center u-text u-text-1">Do the right thing!</h2>
+                  <p class="u-align-center u-text u-text-2"> Did you know:<br>
+                    Over 63 million doses of COVID-19 vaccines have been administered to Australians!<br>
+                    Over 96% of people aged 16 and over have had their first and second dose!<br>
+                    Do the right thing and get vaccinated!
+                    </p>
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60" id="Graph5">
+                <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a0d0"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+        <span>FIT3179 Data Visualisation 2</span>
+    </section>
+  
+</body></html>

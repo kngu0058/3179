@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Recovered Patients Against Deaths across the World",
+  "width": 400,
+  "height": 500,
+  "data": {"url": "https://raw.githubusercontent.com/kngu0058/3179/main/country_wise_latest.csv"},
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "Deaths",
+      "type": "quantitative"
+  },
+    "y": {
+      "field": "Recovered",
+      "type": "quantitative"
+    },
+    "color": {"field": "Country/Region", "type": "nominal"}
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Total Vaccinations against People fully vaccinated",
+    "width": 480,
+    "height": 500,
+    "data": {"url": "https://raw.githubusercontent.com/kngu0058/3179/main/vaccination-data.csv"},
+    "mark": "point",
+    "encoding": {
+    "x": {
+        "title": "People Fully Vaccinated",
+        "field": "PERSONS_FULLY_VACCINATED",
+        "type": "quantitative"
+    },
+    "y": {
+        "title": "Total Vaccinations",
+        "field": "TOTAL_VACCINATIONS",
+        "type": "quantitative"
+    },
+    "color": {"field": "COUNTRY", "type": "nominal"}
+    }
+  }

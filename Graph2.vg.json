@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Hospitalisations and ICU patients over across pandemic",
+    "width": 440,
+    "height": 500,
+    "data": {
+      "url": "https://raw.githubusercontent.com/kngu0058/3179/main/Australia%20(1).csv"
+    },
+    "repeat": {
+      "layer": ["Hospital", " ICU"]
+    },
+    "spec": {
+      "mark": "errorband",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "timeUnit": "month",
+          "type": "temporal"
+        },
+        "y": {
+          "field": {"repeat": "layer"},
+          "type": "quantitative",
+          "title": "Frequency"
+        },
+        "color": {
+          
+          "datum": {"repeat": "layer"},
+          "type": "nominal"
+        }
+      }
+    }
+  }

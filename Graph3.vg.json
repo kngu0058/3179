@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "COVID cases across the months per state.",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/kngu0058/3179/main/Covid%20Cases.csv"
+  },
+ 
+
+  "repeat": {
+    "layer": ["National","ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
+  },
+  "spec": {
+    "mark": "circle",
+    "encoding": {
+      "x": {
+          "field": "Date",
+          "timeUnit": "month",
+          "type": "temporal"
+      },
+      "y": {
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": "Frequency"
+      },
+      "color": {
+        "datum": {"repeat": "layer"},
+        "type": "nominal"
+      }
+    }
+  }
+}
